@@ -7,6 +7,15 @@ const bodyParser = require('body-parser')
 const dotenv = require('dotenv')
 const jwt = require('jsonwebtoken')
 const cors = require('cors')
+const bcrypt = require('bcrypt-nodejs');
+
+
+//routes
+const userRoutes = require('./routes/users')
+//models
+const User = require('./models/User.js')
+
+
 //utility variables
 port = process.env.PORT||3001
 MongoUrl = process.env.MONGO_URL || 'mongodb://localhost/onetwo'
@@ -24,9 +33,14 @@ app.use(logger('dev'))
 //calls bodyParser for parsing json
 app.use(bodyParser.json())
 
-app.get('/', (req, res)=>{
-  res.json({message: "Welcome to Thunderdome..."})
-})
+app.use('/users', userRoutes)
+
+
+
+
+
+
+
 
 app.listen(port, (err)=>{
   console.log(err||`Server running on ${port}`)
