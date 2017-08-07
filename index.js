@@ -15,6 +15,19 @@ mongoose.connect(MongoUrl, (err)=>{
   console.log(err|| "Connected to MongoDB")
 })
 
+//Enables CORS on the server
+app.use(cors())
+
+//calls Morgan middleware for logging of requests
+app.use(logger('dev'))
+
+//calls bodyParser for parsing json
+app.use(bodyParser.json())
+
+app.get('/', (req, res)=>{
+  res.json({message: "Welcome to Thunderdome..."})
+})
+
 app.listen(port, (err)=>{
   console.log(err||`Server running on ${port}`)
 })
