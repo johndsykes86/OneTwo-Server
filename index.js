@@ -9,4 +9,12 @@ const jwt = require('jsonwebtoken')
 const cors = require('cors')
 //utility variables
 port = process.env.PORT||3001
-MongoUrl = proces.env.MONGO_URL || 'mongodb://localhost/onetwo'
+MongoUrl = process.env.MONGO_URL || 'mongodb://localhost/onetwo'
+
+mongoose.connect(MongoUrl, (err)=>{
+  console.log(err|| "Connected to MongoDB")
+})
+
+app.listen(port, (err)=>{
+  console.log(err||`Server running on ${port}`)
+})
