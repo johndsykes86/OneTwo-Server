@@ -4,14 +4,16 @@ const app = express()
 const mongoose = require('mongoose')
 const logger = require('morgan')
 const bodyParser = require('body-parser')
-const dotenv = require('dotenv')
+const dotenv = require('dotenv').config()
 const jwt = require('jsonwebtoken')
 const cors = require('cors')
 const bcrypt = require('bcrypt-nodejs');
 
 
+
 //routes
 const userRoutes = require('./routes/users')
+const stadiumRoutes = require('./routes/stadiums')
 //models
 const User = require('./models/User.js')
 
@@ -34,7 +36,7 @@ app.use(logger('dev'))
 app.use(bodyParser.json())
 
 app.use('/users', userRoutes)
-
+app.use('/stadiums', stadiumRoutes)
 
 
 
