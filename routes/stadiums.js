@@ -13,13 +13,19 @@ router.get('/seed', (req, res) => {
         res.json(result)
       })
     })
+
+    router.get('/', (req,res)=>{
+      Stadium.find({}, (err, stadiums)=>{
+        res.json(stadiums)
+      })
+    })
   });
 
 
-router.get('/', (req, res)=>{
-  Stadium.find({}, (err, stadiums)=>{
+router.get('/:id', (req, res)=>{
+  Stadium.findById(req.params.id, (err, stadium)=>{
     if (err) console.log(err)
-    res.json(stadiums)
+    res.json(stadium)
   })
 })
 

@@ -5,7 +5,8 @@ const mongoose = require('mongoose'),
         lastName:{type: String, required: true},
         userName:{type: String, required: true},
         email:{type: String, required: true},
-        password:{type: String, required: true,select:false}
+        password:{type: String, required: true,select:false},
+        _checkIns:{type: mongoose.Schema.Types.ObjectId, ref: 'checkIn'}
       })
 
       //generates encrypted password
