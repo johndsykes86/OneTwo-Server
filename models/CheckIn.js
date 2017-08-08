@@ -1,7 +1,10 @@
 const mongoose = require('mongoose'),
       checkInSchema = new mongoose.Schema({
-        _user: {type: mongoose.Schema.Types.ObjectId, ref:"User", required: true},
-        _stadium: {type: mongoose.Schema.Types.ObjectId, ref:"Stadium", required: true},
-        hascheckedIn: {type: Boolean, required: true},
+        _userID: {type: mongoose.Schema.Types.ObjectId, ref:"User", required: true},
+        _stadiumID: {type: mongoose.Schema.Types.ObjectId, ref:"Stadium", required: true},
+        comment: {type: String, required: true}
 
       })
+
+
+    module.exports = mongoose.model('checkIn', checkInSchema)
