@@ -27,7 +27,7 @@ const mongoose = require('mongoose'),
       //if a new password is being used, encrypt it and save it.
 
       userSchema.pre('save', function(next){
-        if(!this.isModified('password')) return(next)
+        if(!this.isModified('password')) return next()
         this.password = this.generateHash(this.password)
         next()
       })
