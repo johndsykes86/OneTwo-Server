@@ -9,6 +9,7 @@ const express = require('express'),
   //Shows all stadiums
   router.get('/', (req,res)=>{
     Stadium.find({}, (err, stadiums)=>{
+      console.log(stadiums.length)
       res.json(stadiums)
     })
   })
@@ -16,6 +17,11 @@ const express = require('express'),
 
 //Seed stadium database router
 router.get('/seed', (req, res) => {
+  Stadium.remove({}, (err)=>{
+
+    console.log("all stadiums are DELETED!")
+  })
+
   fs.readFile('./data.json', 'utf-8', (err, data) => {
       if (err) console.log(err)
       const stadiums = JSON.parse(data)
