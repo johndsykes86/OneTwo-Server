@@ -3,6 +3,21 @@ const express = require('express'),
       authRouter = express.Router(),
       User = require('../models/User.js')
 
+
+authRouter.post('/signup', (req,res)=>{
+  res.send(
+    "this would be the landing page for the app!"
+  )
+})
+
+//User creation
+authRouter.post('/signup', (req, res)=>{
+  User.create(req.body, (err, user)=>{
+    if (err) return res.json(err)
+    res.json({message: 'user created', data:user})
+  })
+})
+
 //User log-in
 authRouter.post('/login', (req, res) => {
   // first, find user by the email in the request body.

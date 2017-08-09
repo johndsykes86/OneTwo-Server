@@ -37,7 +37,7 @@ app.use(logger('dev'))
 app.use(bodyParser.json())
 
 //Api routes & token verifiation.
-app.use('/authenicate',authRoutes)
+app.use('/',authRoutes)
 app.use(verifyToken)
 app.use('/users', userRoutes)
 app.use('/stadiums', stadiumRoutes)

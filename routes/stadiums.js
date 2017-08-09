@@ -26,6 +26,12 @@ router.get('/seed', (req, res) => {
     })
   })
 
+  router.get('/checkins', (req, res)=>{
+    CheckIn.find({}, (err, checkIns)=>{
+      if(err) console.log(err)
+      res.json({message:"ok", data: checkIns})
+    })
+  })
 
 
 router.get('/:id', (req, res)=>{
@@ -57,5 +63,7 @@ router.post('/:id/checkin', (req, res)=>{
    })
 
 })
+
+
 
 module.exports = router

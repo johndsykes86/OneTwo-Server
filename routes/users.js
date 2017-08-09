@@ -10,12 +10,9 @@ router.get('/', (req, res)=>{
   User.find({}, (err, users)=>{
     res.json({message: "This is the user index route", users: users})
   })
-}).post('/', (req, res)=>{
-  User.create(req.body, (err, user)=>{
-    if (err) return res.json(err)
-    res.json({message: 'user created', data:user})
-  })
 })
+
+
 
 //Get ind. user route
 router.get('/:id', (req, res)=>{
