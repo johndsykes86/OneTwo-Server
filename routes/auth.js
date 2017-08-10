@@ -4,11 +4,6 @@ const express = require('express'),
       User = require('../models/User.js')
 
 
-authRouter.post('/signup', (req,res)=>{
-  res.send(
-    "this would be the landing page for the app!"
-  )
-})
 
 //User creation
 authRouter.post('/signup', (req, res)=>{
