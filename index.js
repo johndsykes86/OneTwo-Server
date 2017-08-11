@@ -42,6 +42,7 @@ app.use(verifyToken)
 app.use('/api/users', userRoutes)
 app.use('/api/stadiums', stadiumRoutes)
 
+
 // this function is used as middleware to restrict access.
 // client must include a token in their request(s) to proceed
 function verifyToken(req, res, next) {
