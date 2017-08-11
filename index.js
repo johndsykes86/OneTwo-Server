@@ -20,11 +20,11 @@ const User = require('./models/User.js')
 
 
 //utility variables
-port = process.env.PORT||3001
+port = process.env.PORT || 3001
 MongoUrl = process.env.MONGO_URL || 'mongodb://localhost/onetwo'
 
-mongoose.connect(MongoUrl, (err)=>{
-  console.log(err|| "Connected to MongoDB")
+mongoose.connect(MongoUrl, (err) => {
+  console.log(err || "Connected to MongoDB")
 })
 
 //Enables CORS on the server
@@ -38,6 +38,7 @@ app.use(bodyParser.json())
 
 //Api routes & token verifiation.
 app.use('/api', authRoutes)
+app.use(verifyToken)
 app.use('/api/users', userRoutes)
 app.use('/api/stadiums', stadiumRoutes)
 
@@ -47,11 +48,14 @@ function verifyToken(req, res, next) {
   // try to find a token in the request's headers:
   const token = req.headers['token']
   // if the token exists
-  if(token) {
+  if (token) {
     // verify the token's authenticity:
     jwt.verify(token, process.env.SECRET, (err, decoded) => {
       // if there's a problem verifying:
-      if(err) return res.json({success: false, message: "Token could not be verified."})
+      if (err) return res.json({
+        success: false,
+        message: "Token could not be verified."
+      })
       // otherwise, we can get the user's info from the decoded token
       // and make it available from the req object:
       req.user = decoded
@@ -60,7 +64,10 @@ function verifyToken(req, res, next) {
       next()
     })
   } else { // if token is NOT provided in the request headers:
-    res.json({success: false, message: "No token provided. Access denied."})
+    res.json({
+      success: false,
+      message: "No token provided. Access denied."
+    })
   }
 }
 
@@ -71,6 +78,6 @@ function verifyToken(req, res, next) {
 
 
 
-app.listen(port, (err)=>{
-  console.log(err||`Server running on ${port}`)
+app.listen(port, (err) => {
+  console.log(err || `Server running on ${port}`)
 })
