@@ -39,7 +39,6 @@ app.use(bodyParser.json())
 //Api routes & token verifiation.
 app.use('/',authRoutes)
 app.use('/users', userRoutes)
-app.use(verifyToken)
 app.use('/stadiums', stadiumRoutes)
 
 // this function is used as middleware to restrict access.
