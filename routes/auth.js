@@ -4,7 +4,7 @@ const express = require('express'),
       User = require('../models/User.js')
 
 
-authRouter.post('/' (req,res)=>{
+authRouter.post('/', (req,res)=>{
   res.json({message: "this is the index route. If I were a better developer, I'd have a properly documented route"})
 })
 
