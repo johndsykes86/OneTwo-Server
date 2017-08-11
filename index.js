@@ -15,6 +15,7 @@ const bcrypt = require('bcrypt-nodejs');
 const userRoutes = require('./routes/users')
 const stadiumRoutes = require('./routes/stadiums')
 const authRoutes = require('./routes/auth')
+
 //models
 const User = require('./models/User.js')
 
@@ -37,9 +38,9 @@ app.use(logger('dev'))
 app.use(bodyParser.json())
 
 //Api routes & token verifiation.
-app.use('/',authRoutes)
-app.use('/users', userRoutes)
-app.use('/stadiums', stadiumRoutes)
+app.use('/api',authRoutes)
+app.use('/api/users', userRoutes)
+app.use('/api/stadiums', stadiumRoutes)
 
 // this function is used as middleware to restrict access.
 // client must include a token in their request(s) to proceed
