@@ -15,6 +15,8 @@ const bcrypt = require('bcrypt-nodejs');
 const userRoutes = require('./routes/users')
 const stadiumRoutes = require('./routes/stadiums')
 const authRoutes = require('./routes/auth')
+const checkInRoutes = require('./routes/checkins')
+
 //models
 const User = require('./models/User.js')
 
@@ -38,8 +40,9 @@ app.use(bodyParser.json())
 
 //Api routes & token verifiation.
 app.use('/api', authRoutes)
-app.use('/api/users', userRoutes)
 app.use(verifyToken)
+app.use('/api/users', userRoutes)
+app.use('/api/checkins', checkInRoutes)
 app.use('/api/stadiums', stadiumRoutes)
 
 
