@@ -3,7 +3,9 @@ const mongoose = require('mongoose'),
         _userID: {type: mongoose.Schema.Types.ObjectId, ref:"User", required: true},
         userName: {type: String, required: true},
         _stadiumID: {type: mongoose.Schema.Types.ObjectId, ref:"Stadium", required: true},
-        comment: {type: String, required: true}
+        comment: {type: String, required: true},
+        stadiumName: {type: String, required: true},
+        team: {type: String, required: true}
 
       })
 

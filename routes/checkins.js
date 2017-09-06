@@ -12,7 +12,9 @@ const express = require('express'),
          _stadiumID: req.body._stadiumID,
          _userID: req.body._userID,
          comment: req.body.comment,
-         userName: req.body.userName
+         userName: req.body.userName,
+         stadiumName: req.body.stadiumName,
+         team: req.body.team
        })
 
 
