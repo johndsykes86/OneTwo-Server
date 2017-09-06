@@ -2,7 +2,7 @@
   {
     "stadiumName": "Avaya Stadium",
     "team": "San Jose Earthquakes",
-    "location": "San Jose, CA, US",
+    "location": "San Jose, California",
     "firstPlayed": 2015,
     "capacity": 18000,
     "yearBuilt": 2015,
@@ -14,7 +14,7 @@
   {
     "stadiumName": "BBVA Compass Stadium",
     "team": "Houston Dynamo",
-    "location": "Houston, TX, US",
+    "location": "Houston, Texas",
     "firstPlayed": 2012,
     "capacity": 22039,
     "yearBuilt": 2012,
@@ -26,7 +26,7 @@
   {
     "stadiumName": "BC Place",
     "team": "Vancouver Whitecaps FC",
-    "location": "Vancouver, BC, CA",
+    "location": "Vancouver, British Columbia",
     "firstPlayed": 2011,
     "capacity": 22120,
     "yearBuilt": 1983,
@@ -38,19 +38,19 @@
   {
     "stadiumName": "BMO Field",
     "team": "Toronto FC",
-    "location": "Toronto, ON, CA",
+    "location": "Toronto, Ontario",
     "firstPlayed": 2007,
     "capacity": 30000,
     "yearBuilt": 2007,
     "playingSurface": "Grass",
     "fieldDimensions": "115 yd × 74 yd (105 m × 68 m)",
     "stadiumCordinates": "43°37′58″N79°25′07″W",
-    "picURL": "https://cdn.vox-cdn.com/uploads/chorus_asset/file/8089659/US_today_8567066.jpg"
+    "picURL": "https://cdn.vox-cdn.com/uploads/chorus_asset/file/8089659/usa_today_8567066.jpg"
   },
   {
     "stadiumName": "CenturyLink Field",
     "team": "Seattle Sounders FC",
-    "location": "Seattle, WA, US",
+    "location": "Seattle, Washington",
     "firstPlayed": 2009,
     "capacity": 39419,
     "yearBuilt": 2002,
@@ -62,7 +62,7 @@
   {
     "stadiumName": "Children's Mercy Park",
     "team": "Sporting Kansas City",
-    "location": "Kansas City, KS, US",
+    "location": "Kansas City, Kansas",
     "firstPlayed": 2011,
     "capacity": 18467,
     "yearBuilt": 2011,
@@ -74,7 +74,7 @@
   {
     "stadiumName": "Dick's Sporting Goods Park",
     "team": "Colorado Rapids",
-    "location": "Commerce City, CO, US",
+    "location": "Commerce City, Colorado",
     "firstPlayed": 2007,
     "capacity": 18061,
     "yearBuilt": 2007,
@@ -86,19 +86,19 @@
   {
     "stadiumName": "Gillette Stadium",
     "team": "New England Revolution",
-    "location": "Foxborough, MA, US",
+    "location": "Foxborough, Massachusetts",
     "firstPlayed": 2002,
     "capacity": 20000,
     "yearBuilt": 2002,
     "playingSurface": "FieldTurf",
     "fieldDimensions": "115 yd × 75 yd (105 m × 69 m)",
     "stadiumCordinates": "42°05′27.40″N71°15′51.64″W",
-    "picURL": "https://cdn.vox-cdn.com/uploads/chorus_image/image/54225859/US_today_10000579.0.jpg"
+    "picURL": "https://cdn.vox-cdn.com/uploads/chorus_image/image/54225859/usa_today_10000579.0.jpg"
   },
   {
     "stadiumName": "Mapfre Stadium",
     "team": "Columbus Crew SC",
-    "location": "Columbus, OH, US",
+    "location": "Columbus, Ohio",
     "firstPlayed": 1999,
     "capacity": 19968,
     "yearBuilt": 1999,
@@ -110,7 +110,7 @@
   {
     "stadiumName": "Mercedes-Benz Stadium",
     "team": "Atlanta United FC",
-    "location": "Atlanta, GA, US",
+    "location": "Atlanta, Georgia",
     "firstPlayed": 2017,
     "capacity": 42500,
     "yearBuilt": 2017,
@@ -122,7 +122,7 @@
   {
     "stadiumName": "Orlando City Stadium",
     "team": "Orlando City SC",
-    "location": "Orlando, FL, US",
+    "location": "Orlando, Florida",
     "firstPlayed": 2017,
     "capacity": 25500,
     "yearBuilt": 2017,
@@ -134,7 +134,7 @@
   {
     "stadiumName": "Providence Park",
     "team": "Portland Timbers",
-    "location": "Portland, OR, US",
+    "location": "Portland, Oregon",
     "firstPlayed": 2011,
     "capacity": 21144,
     "yearBuilt": 1926,
@@ -146,7 +146,7 @@
   {
     "stadiumName": "RFK Stadium",
     "team": "D.C. United",
-    "location": "Washington, D.C., US",
+    "location": "Washington, D.C.",
     "firstPlayed": 1996,
     "capacity": 20000,
     "yearBuilt": 1961,
@@ -158,7 +158,7 @@
   {
     "stadiumName": "Red Bull Arena",
     "team": "New York Red Bulls",
-    "location": "Harrison, NJ, US",
+    "location": "Harrison, New Jersey",
     "firstPlayed": 2010,
     "capacity": 25000,
     "yearBuilt": 2010,
@@ -170,7 +170,8 @@
   {
     "stadiumName": "Rio Tinto Stadium",
     "team": "Real Salt Lake",
-    "location": "Sandy, UT, US",
+    "location": "Sandy, Utah",
+    "firstPlayed": 2008,
     "capacity": 20213,
     "yearBuilt": 2008,
     "playingSurface": "Grass",
@@ -181,7 +182,7 @@
   {
     "stadiumName": "Stade Saputo",
     "team": "Montreal Impact",
-    "location": "Montreal, QC, CA",
+    "location": "Montreal, Quebec",
     "firstPlayed": 2012,
     "capacity": 20801,
     "yearBuilt": 2008,
@@ -193,7 +194,7 @@
   {
     "stadiumName": "StubHub Center",
     "team": "LA Galaxy",
-    "location": "Carson, CA, US",
+    "location": "Carson, California",
     "firstPlayed": 2003,
     "capacity": 27000,
     "yearBuilt": 2003,
@@ -205,19 +206,19 @@
   {
     "stadiumName": "Talen Energy Stadium",
     "team": "Philadelphia Union",
-    "location": "Chester, PA, US",
+    "location": "Chester, Pennsylvania",
     "firstPlayed": 2010,
     "capacity": 18500,
     "yearBuilt": 2010,
     "playingSurface": "Grass",
     "fieldDimensions": "120 yd × 75 yd (110 m × 69 m)",
     "stadiumCordinates": "39°49′56″N75°22′44″W",
-    "picURL": "https://mlsmultiplex.com/wp-content/uploads/USt-images/2016/04/9201084-mls-new-england-revolution-at-philadelphia-union.jpeg"
+    "picURL": "https://mlsmultiplex.com/wp-content/uploads/usat-images/2016/04/9201084-mls-new-england-revolution-at-philadelphia-union.jpeg"
   },
   {
     "stadiumName": "TCF Bank Stadium",
     "team": "Minnesota United FC",
-    "location": "Minneapolis, MN, US",
+    "location": "Minneapolis, Minnesota",
     "firstPlayed": 2017,
     "capacity": 21895,
     "yearBuilt": 2009,
@@ -229,7 +230,7 @@
   {
     "stadiumName": "Toyota Park",
     "team": "Chicago Fire",
-    "location": "Bridgeview, IL, US",
+    "location": "Bridgeview, Illinois",
     "firstPlayed": 2006,
     "capacity": 20000,
     "yearBuilt": 2006,
@@ -241,7 +242,7 @@
   {
     "stadiumName": "Toyota Stadium",
     "team": "FC Dallas",
-    "location": "Frisco, TX, US",
+    "location": "Frisco, Texas",
     "firstPlayed": 2005,
     "capacity": 20500,
     "yearBuilt": 2005,
@@ -253,7 +254,7 @@
   {
     "stadiumName": "Yankee Stadium",
     "team": "New York City FC",
-    "location": "Bronx, NY, US",
+    "location": "Bronx, New York",
     "firstPlayed": 2015,
     "capacity": 30321,
     "yearBuilt": 2009,
