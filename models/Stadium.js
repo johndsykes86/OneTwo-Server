@@ -8,7 +8,7 @@ const mongoose = require('mongoose'),
         yearBuilt: {type: Number, required: true},
         playingSurface: {type: String, required: true},
         fieldDimensions: {type: String, required: true},
-        stadiumCordinates: {type: String, required: true}
+        stadiumCordinates: {type: String, required: true},
         picURL: {type: String}
       })
 
