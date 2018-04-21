@@ -12,6 +12,18 @@
     "picURL": "http://i.imgur.com/OwEwz2M.jpg"
   },
   {
+    "stadiumName": "Banc of California Stadium",
+    "team": "Los Angeles Football Club",
+    "location": "Los Angeles, CA, US",
+    "firstPlayed": 2018,
+    "capacity": 22000,
+    "yearBuilt": 2018,
+    "playingSurface": "Grass",
+    "fieldDimensions": "115 yd × 75 yd (105 m × 69 m)",
+    "stadiumCordinates": "34.0127625, -118.2845485",
+    "picURL": "http://bancofcaliforniastadium.com/boc/images/portfolio/full/LAFC_aerial_1200.jpg"
+  },
+  {
     "stadiumName": "BBVA Compass Stadium",
     "team": "Houston Dynamo",
     "location": "Houston, TX, US",
@@ -21,7 +33,8 @@
     "playingSurface": "Grass",
     "fieldDimensions": "115 yd × 73 yd (105 m × 67 m)",
     "stadiumCordinates": "29°45.132′N95°21.144′W",
-    "picURL": "https://upload.wikimedia.org/wikipedia/commons/4/4e/BBVA_Compass_Stadium_Inaugural_Match_Opening_Ceremony.jpg"
+    "picURL":
+      "https://upload.wikimedia.org/wikipedia/commons/4/4e/BBVA_Compass_Stadium_Inaugural_Match_Opening_Ceremony.jpg"
   },
   {
     "stadiumName": "BC Place",
@@ -33,7 +46,8 @@
     "playingSurface": "Polytan",
     "fieldDimensions": "17 yd × 75 yd (107 m × 69 m)",
     "stadiumCordinates": "49°16′36″N123°6′43″W",
-    "picURL": "https://vancouver-mp7static.mlsdigital.net/images/fullhouse.jpg?Xi_7lczzftBa_tLdxjZkFt3ftWHFQ6_u"
+    "picURL":
+      "https://vancouver-mp7static.mlsdigital.net/images/fullhouse.jpg?Xi_7lczzftBa_tLdxjZkFt3ftWHFQ6_u"
   },
   {
     "stadiumName": "BMO Field",
@@ -45,7 +59,8 @@
     "playingSurface": "Grass",
     "fieldDimensions": "115 yd × 74 yd (105 m × 68 m)",
     "stadiumCordinates": "43°37′58″N79°25′07″W",
-    "picURL": "https://cdn.vox-cdn.com/uploads/chorus_asset/file/8089659/usa_today_8567066.jpg"
+    "picURL":
+      "https://cdn.vox-cdn.com/uploads/chorus_asset/file/8089659/usa_today_8567066.jpg"
   },
   {
     "stadiumName": "CenturyLink Field",
@@ -57,7 +72,8 @@
     "playingSurface": "FieldTurf",
     "fieldDimensions": "114 yd × 74 yd (104 m × 68 m)",
     "stadiumCordinates": "47.5952°N 122.3316°W",
-    "picURL": "https://upload.wikimedia.org/wikipedia/commons/5/5f/CenturyLink_Field_panorama_from_Section_324_%2821182723826%29.jpg"
+    "picURL":
+      "https://upload.wikimedia.org/wikipedia/commons/5/5f/CenturyLink_Field_panorama_from_Section_324_%2821182723826%29.jpg"
   },
   {
     "stadiumName": "Children's Mercy Park",
@@ -69,7 +85,8 @@
     "playingSurface": "Grass",
     "fieldDimensions": "120 yd × 75 yd (110 m × 69 m)",
     "stadiumCordinates": "39.1218°N 94.8237°W",
-    "picURL": "https://res.cloudinary.com/simpleview/image/upload/crm/kansascityks/Stadium---8D6A9983GRP-abc8fcf35056b3a_abc902f2-5056-b3a8-499c7bf1d2fb8b60.jpg"
+    "picURL":
+      "https://res.cloudinary.com/simpleview/image/upload/crm/kansascityks/Stadium---8D6A9983GRP-abc8fcf35056b3a_abc902f2-5056-b3a8-499c7bf1d2fb8b60.jpg"
   },
   {
     "stadiumName": "Dick's Sporting Goods Park",
@@ -81,7 +98,8 @@
     "playingSurface": "Grass",
     "fieldDimensions": "120 yd × 75 yd (110 m × 69 m)",
     "stadiumCordinates": "39°48′20″N104°53′31″W",
-    "picURL": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Dicks_Sporting_Good_Park.jpg"
+    "picURL":
+      "https://upload.wikimedia.org/wikipedia/commons/1/1a/Dicks_Sporting_Good_Park.jpg"
   },
   {
     "stadiumName": "Gillette Stadium",
@@ -93,7 +111,8 @@
     "playingSurface": "FieldTurf",
     "fieldDimensions": "115 yd × 75 yd (105 m × 69 m)",
     "stadiumCordinates": "42°05′27.40″N71°15′51.64″W",
-    "picURL": "https://cdn.vox-cdn.com/uploads/chorus_image/image/54225859/usa_today_10000579.0.jpg"
+    "picURL":
+      "https://cdn.vox-cdn.com/uploads/chorus_image/image/54225859/usa_today_10000579.0.jpg"
   },
   {
     "stadiumName": "Mapfre Stadium",
@@ -105,7 +124,8 @@
     "playingSurface": "Grass",
     "fieldDimensions": "115 yd × 75 yd (105 m × 69 m)",
     "stadiumCordinates": "40°0′34″N82°59′28″W",
-    "picURL": "https://cdn2.uvnimg.com/0f/b6/9639491c4bfd8f88ff1695abde64/MAPFREStadium.jpg"
+    "picURL":
+      "https://cdn2.uvnimg.com/0f/b6/9639491c4bfd8f88ff1695abde64/MAPFREStadium.jpg"
   },
   {
     "stadiumName": "Mercedes-Benz Stadium",
@@ -117,7 +137,8 @@
     "playingSurface": "FieldTurf",
     "fieldDimensions": "115 yd × 75 yd (105 m × 69 m)",
     "stadiumCordinates": "33°45′19.30″N84°24′4.29″W",
-    "picURL":"https://atlutdportal.io-media.com/sites/stp-atlanta-united/files/1116%20MLS%20Bowl_01%5B2%5D_1454602611.jpg"
+    "picURL":
+      "https://atlutdportal.io-media.com/sites/stp-atlanta-united/files/1116%20MLS%20Bowl_01%5B2%5D_1454602611.jpg"
   },
   {
     "stadiumName": "Orlando City Stadium",
@@ -129,7 +150,8 @@
     "playingSurface": "Grass",
     "fieldDimensions": "120 yd × 75 yd (110 m × 69 m)",
     "stadiumCordinates": "28°37′27.83″N81°23′20.53″W",
-    "picURL":"http://14751-presscdn-0-20.pagely.netdna-cdn.com/wp-content/uploads/2017/05/OCSC1_CourtesyOCSC.png"
+    "picURL":
+      "http://14751-presscdn-0-20.pagely.netdna-cdn.com/wp-content/uploads/2017/05/OCSC1_CourtesyOCSC.png"
   },
   {
     "stadiumName": "Providence Park",
@@ -141,7 +163,8 @@
     "playingSurface": "FieldTurf",
     "fieldDimensions": "110 yd × 75 yd (101 m × 69 m)",
     "stadiumCordinates": "45°31′17″N122°41′30″W",
-    "picURL": "https://upload.wikimedia.org/wikipedia/commons/d/da/Portland_Thorns_FC_mid-game_at_Providence_Park_20170617.jpg"
+    "picURL":
+      "https://upload.wikimedia.org/wikipedia/commons/d/da/Portland_Thorns_FC_mid-game_at_Providence_Park_20170617.jpg"
   },
   {
     "stadiumName": "RFK Stadium",
@@ -153,7 +176,8 @@
     "playingSurface": "Grass",
     "fieldDimensions": "110 yd × 75 yd (101 m × 69 m)",
     "stadiumCordinates": "38.890°N 76.972°W",
-    "picURL": "https://upload.wikimedia.org/wikipedia/commons/8/85/Rfkstadium.png"
+    "picURL":
+      "https://upload.wikimedia.org/wikipedia/commons/8/85/Rfkstadium.png"
   },
   {
     "stadiumName": "Red Bull Arena",
@@ -165,7 +189,8 @@
     "playingSurface": "Grass",
     "fieldDimensions": "120 yd × 75 yd (110 m × 69 m)",
     "stadiumCordinates": "40°44′12″N74°9′1″W",
-    "picURL":"https://upload.wikimedia.org/wikipedia/commons/e/e1/Red_Bull_Arena_Harrison_behind_goal.jpg"
+    "picURL":
+      "https://upload.wikimedia.org/wikipedia/commons/e/e1/Red_Bull_Arena_Harrison_behind_goal.jpg"
   },
   {
     "stadiumName": "Rio Tinto Stadium",
@@ -177,7 +202,8 @@
     "playingSurface": "Grass",
     "fieldDimensions": "120 yd × 75 yd (110 m × 69 m)",
     "stadiumCordinates": "40.582923°N 111.893156°W",
-    "picURL": "https://upload.wikimedia.org/wikipedia/commons/3/34/Rio_Tinto_Stadium_panorama.jpg"
+    "picURL":
+      "https://upload.wikimedia.org/wikipedia/commons/3/34/Rio_Tinto_Stadium_panorama.jpg"
   },
   {
     "stadiumName": "Stade Saputo",
@@ -189,7 +215,8 @@
     "playingSurface": "Grass",
     "fieldDimensions": "120 yd × 77 yd (110 m × 70 m)",
     "stadiumCordinates": "45°33′47″N73°33′9″W",
-    "picURL": "https://montreal-mp7static.mlsdigital.net/elfinderimages/Eric_Bouchard_2017/stade_soir_2016.jpg"
+    "picURL":
+      "https://montreal-mp7static.mlsdigital.net/elfinderimages/Eric_Bouchard_2017/stade_soir_2016.jpg"
   },
   {
     "stadiumName": "StubHub Center",
@@ -201,7 +228,8 @@
     "playingSurface": "Grass",
     "fieldDimensions": "120 yd × 75 yd (110 m × 69 m)",
     "stadiumCordinates": "33°51′52″N118°15′40″W",
-    "picURL":"https://upload.wikimedia.org/wikipedia/commons/7/7f/LA_Galaxy_vs_Houston_Dynamo-_Western_Conference_Finals_panorama.jpg"
+    "picURL":
+      "https://upload.wikimedia.org/wikipedia/commons/7/7f/LA_Galaxy_vs_Houston_Dynamo-_Western_Conference_Finals_panorama.jpg"
   },
   {
     "stadiumName": "Talen Energy Stadium",
@@ -213,7 +241,8 @@
     "playingSurface": "Grass",
     "fieldDimensions": "120 yd × 75 yd (110 m × 69 m)",
     "stadiumCordinates": "39°49′56″N75°22′44″W",
-    "picURL": "https://mlsmultiplex.com/wp-content/uploads/usat-images/2016/04/9201084-mls-new-england-revolution-at-philadelphia-union.jpeg"
+    "picURL":
+      "https://mlsmultiplex.com/wp-content/uploads/usat-images/2016/04/9201084-mls-new-england-revolution-at-philadelphia-union.jpeg"
   },
   {
     "stadiumName": "TCF Bank Stadium",
@@ -225,7 +254,8 @@
     "playingSurface": "FieldTurf",
     "fieldDimensions": "120 yd × 70 yd (110 m × 64 m)",
     "stadiumCordinates": "44.976°N 93.225°W",
-    "picURL":"http://www.twincities.com/wp-content/uploads/2017/03/minnesota-united010.jpg"
+    "picURL":
+      "http://www.twincities.com/wp-content/uploads/2017/03/minnesota-united010.jpg"
   },
   {
     "stadiumName": "Toyota Park",
@@ -237,7 +267,8 @@
     "playingSurface": "Grass",
     "fieldDimensions": "120 yd × 75 yd (110 m × 69 m)",
     "stadiumCordinates": "41°45′53″N87°48′22″W",
-    "picURL": "https://chicagosouthlandcvb.files.wordpress.com/2013/05/toyota-park-streamers_touched.jpg"
+    "picURL":
+      "https://chicagosouthlandcvb.files.wordpress.com/2013/05/toyota-park-streamers_touched.jpg"
   },
   {
     "stadiumName": "Toyota Stadium",
@@ -249,7 +280,8 @@
     "playingSurface": "Grass",
     "fieldDimensions": "117 yd × 74 yd (107 m × 68 m)",
     "stadiumCordinates": "33°9′16″N96°50′7″W",
-    "picURL": "https://upload.wikimedia.org/wikipedia/commons/4/45/Toyota_Park%2C_9_March_2013.jpg"
+    "picURL":
+      "https://upload.wikimedia.org/wikipedia/commons/4/45/Toyota_Park%2C_9_March_2013.jpg"
   },
   {
     "stadiumName": "Yankee Stadium",
@@ -261,7 +293,9 @@
     "playingSurface": "Grass",
     "fieldDimensions": "110 yd × 70 yd (101 m × 64 m)",
     "stadiumCordinates": "40°49′45″N73°55′35″W",
-    "picURL": "http://www.empireofsoccer.com/wp-content/uploads/2013/05/Chelsea-Manchester-City-Yankee-Stadium.jpg",
-    "picURL": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Yankee_Stadium_NYCFC.JPG"
+    "picURL":
+      "http://www.empireofsoccer.com/wp-content/uploads/2013/05/Chelsea-Manchester-City-Yankee-Stadium.jpg",
+    "picURL":
+      "https://upload.wikimedia.org/wikipedia/commons/0/0d/Yankee_Stadium_NYCFC.JPG"
   }
 ]
