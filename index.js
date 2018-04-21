@@ -29,6 +29,9 @@ mongoose.connect(MongoUrl, (err) => {
   console.log(err || "Connected to MongoDB")
 })
 
+//static pages
+app.use(express.static("docs"));
+
 //Enables CORS on the server
 app.use(cors())
 
@@ -37,6 +40,7 @@ app.use(logger('dev'))
 
 //calls bodyParser for parsing json
 app.use(bodyParser.json())
+
 
 //Api routes & token verifiation.
 app.use('/api', authRoutes)
@@ -79,6 +83,9 @@ function verifyToken(req, res, next) {
 
 
 
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "../docs/", "index.html"));
+});
 
 
 

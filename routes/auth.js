@@ -1,14 +1,10 @@
 const express = require('express'),
       jwt = require('jsonwebtoken'),
       authRouter = express.Router(),
+      path = require('path')
       User = require('../models/User.js')
 
-var doc = "Welcome to the OneTwo API. If you have any questions or run into a technical issue, please email me at hireme@mrjsykes.com."
-
-
-authRouter.get('/', (req,res)=>{
-  res.json({message: doc})
-})
+var doc = "Welcome to the OneTwo API. If you have any questions or run into a technical issue, please email me at johnathon@seesykes.codes."
 
 
 //User creation
