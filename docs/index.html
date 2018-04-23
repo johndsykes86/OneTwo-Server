@@ -26,11 +26,12 @@
             <section>
                 <h2>Basics</h2>
                 <p>All requests must be made to the following url:
-                        <code class="lang-http">
-                            https://onetwo-server.herokuapp.com/api/
-                        </code>
-                    followed by the endpoint you wish to make the request to. All requests, except requests to the <code>/signup</code> or <code>/login</code> endpoints, must be valided or you will
-                    get the following response.
+                    <code class="lang-http">
+                        https://onetwo-server.herokuapp.com/api/
+                    </code>
+                    followed by the endpoint you wish to make the request to. All requests, except requests to the
+                    <code>/signup</code> or
+                    <code>/login</code> endpoints, must be valided or you will get the following response.
                     <br>
                     <pre>
                         <code>
@@ -62,21 +63,18 @@
                     }
                     </code>
                 </pre>
-                    
-                    <pre>
+
+                <pre>
                         <code>
                             //response from server
-                        { 
+                         { 
                              "message": "user created", 
-                             "data": { "__v": 0, 
-                             "firstName": "Don", 
-                             "lastName": "Ovan", 
-                             "userName": "LegenD10", 
-                             "email": "CozmoLover@LAGalaxy.com", 
-                             "password": "$2a$08$ZJxvMbkwk4lhFipjh3cXW.J3qc4M0.vnJcLUaiMsbevmKdGZJ8NrC", 
-                            "_id": "5ade33556e8f060004a9cc27",
-                            "_checkIns": [] } 
-                        }
+                             "data": { 
+                                 "firstName": "Don", 
+                                 "lastName": "Ovan",  
+                                 "userName": "LegenD10", 
+                                 "email": "CozmoLover@LAGalaxy.com"
+                        } }
                         </code>
                     </pre>
                 </pre>
@@ -94,9 +92,30 @@
                 <p>
                     <code>password</code>: password for user.</p>
 
+                    <hr>
+                <h3>Login</h3>
+                <code>POST /login </code>
+                <p>Authenicates the user and passes a JSON Web Token. The returned token should be used to validate any additional requests to the API</p>
 
-            <h3>Login</h3>
-            
+                Example request and expected response
+                <pre>
+                    <code>
+                         { 
+                            "email": "CozmoLover@LAGalaxy.com", 
+                            "password": "FirstLeonFive57" 
+                        }
+                    </code>
+                </pre>
+                <pre>
+                    <code>
+                         { 
+                            "success": true, 
+                            "message": "Logged in successfully.", 
+                            "token":   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+                        }
+                    </code>
+                </pre>
+
             </section>
             <hr>
             <section>

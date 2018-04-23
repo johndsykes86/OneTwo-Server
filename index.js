@@ -82,8 +82,11 @@ function verifyToken(req, res, next) {
 
 
 
-
 app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "../docs/", "index.html"));
+});
+
+app.get("/api", (req, res) => {
   res.sendFile(path.join(__dirname, "../docs/", "index.html"));
 });
 

@@ -14,9 +14,8 @@ authRouter.post('/signup', (req, res)=>{
     userInfo = {
       firstName: user.firstName,
       lastName: user.lastName,
-      user: user.userName,
+      userName: user.userName,
       email: user.email,
-      
     }
     res.json({message: 'user created', data:userInfo})
   })
