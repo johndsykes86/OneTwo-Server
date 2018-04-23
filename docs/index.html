@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.14.0/themes/prism-tomorrow.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
 
@@ -12,13 +13,103 @@
     <title>OneTwo Documentation</title>
 </head>
 
-<body>
+<body class='lang-json'>
     <div class="container">
-        <div class="jumbotron">
-        <h1 class="display-4">OneTwo API Documentation</h1>
-        <p class="lead">Welcome to the OneTwo API. If you have any questions or run into a technical issue, please email me at johnathon@seesykes.codes</p>
-        </div>
+        <header>
+            <h1 class="display-4 text-center">OneTwo API Documentation</h1>
+            <p class="lead">Welcome to the OneTwo API. If you have any questions or run into a technical issue, please email me at johnathon@seesykes.codes</p>
+        </header>
+
+        <hr>
+
+        <main>
+            <section>
+                <h2>Basics</h2>
+                <p>All requests must be made to the following url:
+                        <code class="lang-http">
+                            https://onetwo-server.herokuapp.com/api/
+                        </code>
+                    followed by the endpoint you wish to make the request to. All requests, except requests to the <code>/signup</code> or <code>/login</code> endpoints, must be valided or you will
+                    get the following response.
+                    <br>
+                    <pre>
+                        <code>
+                    { 
+                        success: false, 
+                        message: "No token provided. Access denied." 
+                    }
+                        </code>
+                   </pre> Each request's body must be sent in JSON format unless otherwise stated.
+                </p>
+            </section>
+            <hr>
+            <section id="user-setup">
+                <h2>User Signup and Login</h2>
+                <h3>Signup</h3>
+                <code>
+                    POST /signup
+                </code>
+                <p>Creates a user based on information send via the post request.</p>
+                <p>Here is an example of a request with a JSON body and it's expected result </p>
+                <pre>
+                    <code>
+                    { 
+                        "firstName": "Don", 
+                        "lastName": "Ovan", 
+                        "userName": "LegenD10", 
+                        "email": "CozmoLover@LAGalaxy.com", 
+                        "password": "FirstLeonFive57"
+                    }
+                    </code>
+                </pre>
+                    
+                    <pre>
+                        <code>
+                            //response from server
+                        { 
+                             "message": "user created", 
+                             "data": { "__v": 0, 
+                             "firstName": "Don", 
+                             "lastName": "Ovan", 
+                             "userName": "LegenD10", 
+                             "email": "CozmoLover@LAGalaxy.com", 
+                             "password": "$2a$08$ZJxvMbkwk4lhFipjh3cXW.J3qc4M0.vnJcLUaiMsbevmKdGZJ8NrC", 
+                            "_id": "5ade33556e8f060004a9cc27",
+                            "_checkIns": [] } 
+                        }
+                        </code>
+                    </pre>
+                </pre>
+
+                <h4>Fields</h4>
+                <p>All fields are required.</p>
+                <p>
+                    <code>firstName</code>: First name of the user.</p>
+                <p>
+                    <code>lastName</code>: Last name of the user.</p>
+                <p>
+                    <code>userName</code>: desired username for the user.</p>
+                <p>
+                    <code>email</code>: email address for the user.</p>
+                <p>
+                    <code>password</code>: password for user.</p>
+
+
+            <h3>Login</h3>
+            
+            </section>
+            <hr>
+            <section>
+                <h2>Requests and Validation</h2>
+            </section>
+        </main>
+
+
+
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.14.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.14.0/components/prism-json.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.14.0/components/prism-http.min.js"></script>
 </body>
 
 </html>

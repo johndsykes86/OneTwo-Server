@@ -11,7 +11,14 @@ var doc = "Welcome to the OneTwo API. If you have any questions or run into a te
 authRouter.post('/signup', (req, res)=>{
   User.create(req.body, (err, user)=>{
     if (err) return res.json(err)
-    res.json({message: 'user created', data:user})
+    userInfo = {
+      firstName: user.firstName,
+      lastName: user.lastName,
+      user: user.userName,
+      email: user.email,
+      
+    }
+    res.json({message: 'user created', data:userInfo})
   })
 })
 
