@@ -29,19 +29,23 @@
                     <code class="lang-http">
                         https://onetwo-server.herokuapp.com/api/
                     </code>
-                    followed by the endpoint you wish to make the request to. All requests, except requests to the
-                    <code>/signup</code> or
-                    <code>/login</code> endpoints, must be valided or you will get the following response.
-                    <br>
-                    <pre>
-                        <code>
-                    { 
-                        success: false, 
-                        message: "No token provided. Access denied." 
-                    }
-                        </code>
-                   </pre> Each request's body must be sent in JSON format unless otherwise stated.
+                    followed by the endpoint you wish to make the request to. The body of each request must be sent in JSON format unless otherwise
+                    stated.
                 </p>
+
+                <h3>Request Validation</h3>
+                <p>All requests, except for those made to the
+                    <code>/login</code> and
+                    <code>/signup</code> endpoints must be validated with an authentication token placed in the header of the request.
+                    You can get a token by hitting the
+                    <code>/login</code> endpoint with a valid username and password. Here's an example of a curl request to the
+                    /stadiums endpoint with a valid token
+                    <pre>
+                    <code>
+ curl -H "Token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YWRlMzM1NTZlOGYwNjAwMDRhOWNjMjciLCJmaXJzdE5hbWUiOiJEb24iLCJsYXN0TmFtZSI6Ik92YW4iLCJ1c2VyTmFtZSI6IkxlZ2VuRDEwIiwiZW1haWwiOiJDb3ptb0xvdmVyQExBR2FsYXh5LmNvbSIsIl9fdiI6MCwiX2NoZWNrSW5zIjpbXSwiaWF0IjoxNTI0NTkxNjQ1fQ.PGCQldv6gLhv2G-OrKmzbDNqd8l-5OdXEJe-EMhjdDM"
+ http://onetwo-server.seesykes.codes/api/stadiums
+                    </code>
+                </pre> </p>
             </section>
             <hr>
             <section id="user-setup">
@@ -50,8 +54,8 @@
                 <code>
                     POST /signup
                 </code>
-                <p>Creates a user based on information send via the post request.</p>
-                <p>Here is an example of a request with a JSON body and it's expected result </p>
+                <p>Creates a user based on information sent via the post request.</p>
+                <p>Here is an example of a request with a JSON body and its expected result: </p>
                 <pre>
                     <code>
                     { 
@@ -69,12 +73,14 @@
                             //response from server
                          { 
                              "message": "user created", 
-                             "data": { 
+                             "data": 
+                             { 
                                  "firstName": "Don", 
                                  "lastName": "Ovan",  
                                  "userName": "LegenD10", 
                                  "email": "CozmoLover@LAGalaxy.com"
-                        } }
+                            } 
+                    }
                         </code>
                     </pre>
                 </pre>
@@ -86,18 +92,22 @@
                 <p>
                     <code>lastName</code>: Last name of the user.</p>
                 <p>
-                    <code>userName</code>: desired username for the user.</p>
+                    <code>userName</code>: Desired username for the user.</p>
                 <p>
-                    <code>email</code>: email address for the user.</p>
+                    <code>email</code>: Email address for the user.</p>
                 <p>
-                    <code>password</code>: password for user.</p>
+                    <code>password</code>: Password for user.</p>
 
-                    <hr>
+                <h4>Additional info</h4>
+                <p>Passwords are not saved as plain-text, but hashed prior to saving. Passwords are not returned by the server.
+                    </p>
+                <hr>
                 <h3>Login</h3>
                 <code>POST /login </code>
-                <p>Authenicates the user and passes a JSON Web Token. The returned token should be used to validate any additional requests to the API</p>
+                <p>Authenticates the user and passes a JSON web token. You will use the returned token to authenticate additional
+                    requests made to the API.</p>
 
-                Example request and expected response
+                Example request and expected response:
                 <pre>
                     <code>
                          { 
@@ -119,7 +129,8 @@
             </section>
             <hr>
             <section>
-                <h2>Requests and Validation</h2>
+
+
             </section>
         </main>
 
