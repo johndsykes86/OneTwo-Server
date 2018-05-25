@@ -10,7 +10,7 @@ const mongoose = require('mongoose'),
         fieldDimensions: {type: String, required: true},
         stadiumCordinates: {type: String, required: true},
         picURL: {type: String},
-        backgroundColor: {type: String},
+        backgroundColor: {type: String}
       })
 
       module.exports = mongoose.model('Stadium', stadiumSchema)
