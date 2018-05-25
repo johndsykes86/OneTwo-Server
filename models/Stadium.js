@@ -9,7 +9,8 @@ const mongoose = require('mongoose'),
         playingSurface: {type: String, required: true},
         fieldDimensions: {type: String, required: true},
         stadiumCordinates: {type: String, required: true},
-        picURL: {type: String}
+        picURL: {type: String},
+        backgroundColor: {type: String},
       })
 
       module.exports = mongoose.model('Stadium', stadiumSchema)
