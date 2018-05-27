@@ -5,7 +5,7 @@ const express = require('express'),
 
 
 
-// //Users Index route
+//Users Index route
 // router.get('/', (req, res)=>{
 //   User.find({}, (err, users)=>{
 //     res.json({message: "This is the user index route", users: users})

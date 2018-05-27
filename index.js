@@ -16,6 +16,7 @@ const userRoutes = require('./routes/users')
 const stadiumRoutes = require('./routes/stadiums')
 const authRoutes = require('./routes/auth')
 const checkInRoutes = require('./routes/checkins')
+const commentsRoutes = require('./routes/comments')
 
 //models
 const User = require('./models/User.js')
@@ -48,6 +49,7 @@ app.use(verifyToken)
 app.use('/api/users', userRoutes)
 app.use('/api/checkins', checkInRoutes)
 app.use('/api/stadiums', stadiumRoutes)
+app.use("/api/comments", commentsRoutes);
 
 
 

@@ -2,7 +2,9 @@ const express = require("express"),
   router = express.Router(),
   Stadium = require("../models/Stadium.js"),
   CheckIn = require("../models/CheckIn.js"),
+  Comment = require("../models/Comment.js"),
   User = require("../models/User.js");
+
 
 //Save checkin into stadium
 router.post("/:id/", (req, res) => {
@@ -28,15 +30,25 @@ router.post("/:id/", (req, res) => {
   });
 });
 
+
+
 //get checkins for a single stadium
-router.get("/:id/", (req, res) => {
+router.get("/stadiums/:id/", (req, res) => {
   CheckIn.find({ _stadiumID: req.params.id }, (err, checkIns) => {
     if (err) console.log(err);
     res.json({ data: checkIns });
   });
 });
 
-//get all checkins for a user
+//get a single checkin
+router.get("/:id/", (req, res) => {
+  CheckIn.find({ _id: req.params.id }, (err, checkIns) => {
+    if (err) console.log(err);
+    res.json({ data: checkIns });
+  });
+});
+
+//get all checkins for a single user
 router.get("/users/:id", (req, res) => {
   CheckIn.find({ _userID: req.params.id }, (err, checkIns) => {
     if (err) console.log(err);
